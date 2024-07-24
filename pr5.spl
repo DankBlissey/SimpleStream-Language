@@ -1,0 +1,18 @@
+{
+ARRAY:var1 =* IN AT 0;
+ARRAY:out =* [];
+INT:index1 =* 1;
+
+ADD out var1 AT 0;
+RETURN var1 AT 0;
+
+-- this is an example comment
+WHILE (LENGTH var1 > index1)
+
+ADD out (var1 AT index1) + (out AT index1 - 1);
+RETURN out AT index1;
+
+index1++;
+
+ENDLOOP;
+}

@@ -1,0 +1,25 @@
+{
+ARRAY:var1 =* IN AT 0;
+ARRAY:var2 =* IN AT 1;
+ARRAY:var3 =* IN AT 2;
+INT:index1 =* 0;
+INT:val1 =* 0;
+INT:val2 =* 0;
+INT:val3 =* 0;
+
+WHILE (LENGTH var1 > index1 AND LENGTH var2 > index1 AND LENGTH var3 > index1)
+
+val1 =* var1 AT index1;
+val2 =* var2 AT index1;
+val3 =* var3 AT index1;
+
+RETURN val3;
+RETURN val2;
+RETURN val1;
+RETURN val1 + val2;
+RETURN val2 + val3;
+
+index1 =* index1 + 1;
+
+ENDLOOP;
+}

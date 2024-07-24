@@ -1,0 +1,16 @@
+{
+ARRAY:var1 =* IN AT 0;
+ARRAY:var2 =* IN AT 1;
+INT:index1 =* 0;
+
+RETURN 0;
+
+WHILE (LENGTH var1 > index1 AND LENGTH var2 > index1 * 2 + 1)
+
+RETURN var2 AT index1 * 2 + 1;
+RETURN var1 AT index1;
+
+index1 =* index1 + 1;
+
+ENDLOOP;
+}

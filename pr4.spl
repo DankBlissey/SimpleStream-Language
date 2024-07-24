@@ -1,0 +1,14 @@
+{
+ARRAY:var1 =* IN AT 0;
+INT:index1 =* 2;
+
+WHILE (LENGTH var1 > index1)
+
+RETURN var1 AT index1;
+RETURN 2 * (var1 AT index1 - 1);
+RETURN 3 * (var1 AT index1 - 2) -1;
+
+index1 =* index1 + 3;
+
+ENDLOOP;
+}
